@@ -1,0 +1,14 @@
+.itemCarrito {
+    background: rgb(246,152,171);
+    background: radial-gradient(circle, rgba(246,152,171,1) 38%, rgba(207,135,193,0.835171568627451) 80%);   
+}
+.itemH {
+  background-color: rgb(184, 87, 197);
+}
+.foto {
+  height: 90px;
+  width: 90px;
+}
+h4 img p {
+  margin-left: 20px;
+}

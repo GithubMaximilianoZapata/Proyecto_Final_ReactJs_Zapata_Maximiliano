@@ -3,19 +3,20 @@ import { useCartContext } from "../../context/CartContext";
 
 const ItemCart = ({item}) => {
   const {removerProducto} = useCartContext();  
-    
+  const {img, nombre, descripcion, cantidad, precio} = item;    
   return (
     <div className="card">
-      <div className="card-header">
-        <h2>PRODUCTO</h2>
+      <div className="card-header itemH">
+        <h3 className="producto">PRODUCTO</h3>
       </div>
-      <div className="card-body">
-        <h5 className="card-title">{item.nombre}</h5>
-        <p className="card-text">{item.descripcion}</p>
-        <p className="card-text">Cantidad: {item.cantidad} Kg/Unid.</p>
-        <p className="card-text">Precio: $ {item.precio}</p>
-        <p className="card-text">Subtotal: $ {item.cantidad * item.precio} </p>
-        <button type="button" className="btn btn-dark button3" onClick = {()=> removerProducto(item.id)}>Eliminar Producto</button>                
+      <div className="card-body itemCarrito">
+        <h4 className="card-title">{nombre}</h4>
+        <img src={img} className="img-fluid rounded-start foto" alt={nombre} />
+        <p className="card-text"><b>{descripcion}</b></p>
+        <p className="card-text"><b>Cantidad:</b> {cantidad} Kg/Unid.</p>
+        <p className="card-text"><b>Precio:</b> $ {precio} x kg/unid.</p>
+        <p className="card-text"><b>Subtotal:</b> $ {cantidad * precio} </p>
+        <button type="button" className="btn btn-dark" onClick ={()=> removerProducto(item.id)}>Eliminar Producto</button>                
       </div>
     </div>
   );

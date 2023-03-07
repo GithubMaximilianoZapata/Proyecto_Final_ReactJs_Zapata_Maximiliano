@@ -30,7 +30,7 @@
         "id": 4,
         "img": "../img/alfajores1-250x250.jpg",
         "nombre": "Alfajor Artesanal Chocolate",
-        "descripcion": "Alfajores cubiertos por choclate negro rellenos con dulce de leche.",
+        "descripcion": "Alfajores cubiertos por chocolate negro rellenos con dulce de leche.",
         "precio": 150,        
         "categoria": "alfajores",
         "stock": 12
@@ -39,7 +39,7 @@
         "id": 5,
         "img": "../img/alfajores2-250x250.jpg",
         "nombre": "Mini Alfajor Chocolate Negro",
-        "descripcion": "Mini Alfajores cubirtos de chocolate negro rellenos con crema a eleccion.",
+        "descripcion": "Mini Alfajores cubiertos de chocolate negro rellenos con crema a eleccion.",
         "precio": 130,        
         "categoria": "alfajores",
         "stock": 12
@@ -57,7 +57,7 @@
         "id": 7,
         "img": "../img/alfajores3-250x250.jpg",
         "nombre": "Mini Alfajor Premiun",
-        "descripcion": "Mini Alfajores cubirtos de chocolate negro rellenos con crema a eleccion.",
+        "descripcion": "Mini Alfajores cubiertos de chocolate negro rellenos con crema a eleccion.",
         "precio": 140,        
         "categoria": "alfajores",
         "stock": 12
