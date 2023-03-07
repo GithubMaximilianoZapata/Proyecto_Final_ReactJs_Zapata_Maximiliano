@@ -1,0 +1,7 @@
+.nombre, .descripcion, .precio {
+    margin-left: 10px;
+}
+.cardProd {
+    width: 350px;
+    margin: 7px;
+}

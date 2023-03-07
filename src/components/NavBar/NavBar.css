@@ -1,0 +1,21 @@
+.nav {
+    color: whitesmoke;
+    font-size: 20px;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    margin: 0%; 
+    margin-right: 20rem;  
+}
+.titulo {
+    color: whitesmoke;
+    margin-right: 40px;
+    font-size: 30px; 
+    margin: 0%;  
+    margin-right: 20rem; 
+}

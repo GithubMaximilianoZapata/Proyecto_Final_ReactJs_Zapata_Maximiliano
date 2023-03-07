@@ -1,0 +1,8 @@
+.cardDetail {
+    background: rgb(246,152,171);
+    background: radial-gradient(circle, rgba(246,152,171,1) 38%, rgba(207,135,193,0.835171568627451) 80%);
+   
+}
+.cantidad {
+    margin-right: 80px;
+}

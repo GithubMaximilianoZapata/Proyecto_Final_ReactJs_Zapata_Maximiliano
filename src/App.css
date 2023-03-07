@@ -1,0 +1,10 @@
+.hola {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+
+.app {
+    background: rgb(246,152,171);
+    background: radial-gradient(circle, rgba(246,152,171,1) 38%, rgba(207,135,193,0.835171568627451) 80%);
+}
