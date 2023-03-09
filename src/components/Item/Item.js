@@ -3,7 +3,7 @@ import "./item.css"
 import { Link } from "react-router-dom";
 
 const Item = ({ prod }) => {
-    const { img, nombre, id } = prod;
+    const { img, nombre, id} = prod;
     return (
         <>
             <div className="card mb-3 cardProd">

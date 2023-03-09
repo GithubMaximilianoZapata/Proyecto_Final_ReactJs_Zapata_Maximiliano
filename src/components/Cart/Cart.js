@@ -20,7 +20,7 @@ const Cart = () => {
       <h3 className="total"><strong>TOTAL DE TU COMPRA: $ {totalCompra()}</strong></h3>
       <Link to="/"><button type="button" className="btn btn-dark button3">Seguir Comprando</button></Link>
       <button type="button" className="btn btn-dark button3" onClick={() => limpiarCarrito()}>Limpiar Carrito</button>
-      <button type="button" className="btn btn-dark button3">Ir a Pagar</button>
+      <button type="button" className="btn btn-dark button3">Terminar Compra</button>
     </div>
   );
 };

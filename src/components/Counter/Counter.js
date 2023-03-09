@@ -17,7 +17,7 @@ const Counter = ({ stock, onAdd }) => {
   return (
     <div className='contador'>
       <button className='button1' onClick={clickDown}>-</button>
-      {counter}
+      <b>{counter}</b>
       <button className='button2' onClick={clickUp}>+</button>
       <button type="button" className="btn btn-dark button3" disabled={counter === 0 || stock === 0} onClick={() => onAdd(counter)}>Agregar al Carrito</button>
     </div>

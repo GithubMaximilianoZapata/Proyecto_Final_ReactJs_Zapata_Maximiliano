@@ -13,8 +13,9 @@ const ItemDetail = ({ prod }) => {
     const [irCarrito, setIrCarrito] = useState(false);
 
     const onAdd = (cantidad) => {
-        setIrCarrito(true);
+        setIrCarrito(true);        
         agregarProducto(prod, cantidad);
+        
     };
     return (
         <>
@@ -25,11 +26,11 @@ const ItemDetail = ({ prod }) => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">{nombre}</h5>
+                            <h3 className="card-title">{nombre}</h3>
                             <p className="card-text">{descripcion}</p>
-                            <p className="card-text">$ {precio} x Kg/Unid.</p>
-                            <p className="card-text">Stock Disponible: {stock} Kg/Unid.</p>
-                            {irCarrito ? <><Link to="/"><button type="button" className="btn btn-dark button3">Seguir Comprando</button></Link><Link to="/cart"><button type="button" className="btn btn-dark button3">Ir Al Carrito</button></Link></> : <Counter stock={stock} onAdd={onAdd} />}
+                            <p className="card-text"><b> Precio:</b> $ {precio} x Kg/Unid.</p>
+                            <p className="card-text"><b>Stock Disponible:</b> {stock} Kg/Unid.</p>
+                            {irCarrito ? <><Link to="/"><button type="button" className="btn btn-dark button3">Seguir Comprando</button></Link><Link to="/cart"><button type="button" className="btn btn-dark button3">Ir al Carrito</button></Link></> : <Counter stock={stock} onAdd={onAdd} />}
                         </div>
                     </div>
                 </div>
