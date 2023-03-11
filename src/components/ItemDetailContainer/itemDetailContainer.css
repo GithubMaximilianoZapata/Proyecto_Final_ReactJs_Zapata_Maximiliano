@@ -1,0 +1,10 @@
+.cargador {
+    width: "100vw";
+    height: "100vh";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    margin-bottom: 140px;
+  }
+  

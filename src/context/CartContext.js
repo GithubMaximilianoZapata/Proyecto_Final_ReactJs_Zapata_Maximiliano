@@ -23,13 +23,6 @@ const CartProvider = ({ children }) => {
         setCarrito(newCarrito);
     };
 
-    const listaProductos = () => {
-        return (
-            fetch("../products.json")
-                .then((res) => res.json())
-                .then((res) => res))
-    };
-
     const totalCompra = () => { return (carrito.reduce((acc, el) => acc + el.cantidad * el.precio, 0)); };
 
     const cantidadProductos = () => { return (carrito.reduce((acc, el) => acc + el.cantidad, 0)); };
@@ -40,7 +33,6 @@ const CartProvider = ({ children }) => {
             removerProducto,
             agregarProducto,
             totalCompra,
-            listaProductos,
             cantidadProductos,
             carrito
         }}>

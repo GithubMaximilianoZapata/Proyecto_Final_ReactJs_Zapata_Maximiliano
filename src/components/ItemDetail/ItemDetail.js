@@ -13,13 +13,13 @@ const ItemDetail = ({ prod }) => {
     const [irCarrito, setIrCarrito] = useState(false);
 
     const onAdd = (cantidad) => {
-        setIrCarrito(true);        
+        setIrCarrito(true);
         agregarProducto(prod, cantidad);
-        
+
     };
     return (
         <>
-            <div className="card mb-3 cardDetail" style={{ max_widht: "200px" }}>
+            <div className="card mb-3 cardDetail">
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img src={img} className="img-fluid rounded-start" alt={nombre} />
