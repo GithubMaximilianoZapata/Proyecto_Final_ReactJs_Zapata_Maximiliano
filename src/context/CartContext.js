@@ -14,8 +14,13 @@ const CartProvider = ({ children }) => {
         let newCarrito;
         let producto = carrito.find((prod) => prod.id === item.id);
         if (producto) {
-            producto.cantidad += cantidad
-            newCarrito = [...carrito];
+            if (producto.cantidad >= producto.stock) {
+                cantidad = item.stock
+                newCarrito = [...carrito]
+            }else {
+                producto.cantidad += cantidad
+                newCarrito = [...carrito]
+            };    
         } else {
             producto = { ...item, cantidad }
             newCarrito = [...carrito, producto]
