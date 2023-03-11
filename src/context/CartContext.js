@@ -17,10 +17,10 @@ const CartProvider = ({ children }) => {
             if (producto.cantidad >= producto.stock) {
                 cantidad = item.stock
                 newCarrito = [...carrito]
-            }else {
+            } else {
                 producto.cantidad += cantidad
                 newCarrito = [...carrito]
-            };    
+            };
         } else {
             producto = { ...item, cantidad }
             newCarrito = [...carrito, producto]
