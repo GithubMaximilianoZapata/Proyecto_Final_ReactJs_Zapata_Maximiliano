@@ -13,14 +13,14 @@ const Cart = () => {
         <Link to="/"><button type="button" className="btn btn-dark button3">IR A COMPRAR</button></Link>
       </div>
     )
-  }
+  };  
   return (
     <div>
       {carrito.map(item => <ItemCart key={item.id} item={item} />)}
       <h3 className="total"><strong>TOTAL DE TU COMPRA: $ {totalCompra()}</strong></h3>
       <Link to="/"><button type="button" className="btn btn-dark button3">Seguir Comprando</button></Link>
       <button type="button" className="btn btn-dark button3" onClick={() => limpiarCarrito()}>Limpiar Carrito</button>
-      <button type="button" className="btn btn-dark button3">Terminar Compra</button>
+      <Link to="/form"><button type="button" className="btn btn-dark button3">Terminar Compra</button></Link>
     </div>
   );
 };
