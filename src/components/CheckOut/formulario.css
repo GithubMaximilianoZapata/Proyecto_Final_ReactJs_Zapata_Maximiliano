@@ -1,0 +1,47 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.itemForm {
+   margin: 25px;
+   font-size: 20px;
+}
+.input1 {
+    background: rgb(246,152,171);
+    background: radial-gradient(circle, rgba(246,152,171,1) 38%, rgba(207,135,193,0.835171568627451) 80%);
+    margin-left: 10px;
+    font-size: 20px;
+    border: solid black;
+    border-radius: 3%;
+}
+.input2 {
+    background: rgb(246,152,171);
+    background: radial-gradient(circle, rgba(246,152,171,1) 38%, rgba(207,135,193,0.835171568627451) 80%);
+    margin-left: 133px;
+    font-size: 20px;
+    border: solid black;
+    border-radius: 3%;
+}
+.input3 {
+    background: rgb(246,152,171);
+    background: radial-gradient(circle, rgba(246,152,171,1) 38%, rgba(207,135,193,0.835171568627451) 80%);
+    margin-left: 104px;
+    font-size: 20px;
+    border: solid black;
+    border-radius: 3%;
+}
+.compra {
+    margin-left: 220px;
+    width: 240px;
+}
+.ordenId {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

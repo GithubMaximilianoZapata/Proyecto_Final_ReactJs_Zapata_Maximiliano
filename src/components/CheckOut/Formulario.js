@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./formulario.css"
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { useCartContext } from "../../context/CartContext"
 
 
@@ -21,7 +21,7 @@ const Formulario = () => {
       comprador: form,          
       items : carrito.map(prod => ({Id: prod.id, Nombre: prod.nombre, Cantidad: prod.cantidad, Precio: prod.precio})),
       total: totalCompra(),
-      dia: Date.now()
+      fecha: serverTimestamp()
   };  
     ev.preventDefault();
     const bd = getFirestore();
@@ -38,40 +38,46 @@ const Formulario = () => {
   };
 
   return (
-    <div>
+    <div className="contenedor"> 
       {typeof id !== "undefined" ? (
-        <p>Su orden de compra ha sido procesada con el ID: {id}</p>
+        <p className="ordenId"><b>Su orden de compra ha sido procesada con el ID: {id}</b></p>
       ) : ("")}
       <form onSubmit={submitForm}>
-        <div>
-          <label htmlFor="nombre">Nombre Completo: </label>
+        <div className="itemForm">
+          <label htmlFor="nombre"><b>Nombre Completo :</b>  </label>
           <input
             name="nombre"
             id="nombre"
             value={form.nombre}
-            onChange={inputData}
+            onChange={inputData}            
+            className="input1"
+            required
           />
         </div>
-        <div>
-          <label htmlFor="email">Email: </label>
+        <div className="itemForm">
+          <label htmlFor="email"><b>Email :</b>  </label>
           <input
             type="email"
             name="email"
             id="email"
             value={form.email}
-            onChange={inputData}
+            onChange={inputData}            
+            className="input2"
+            required
           />
         </div>
-        <div>
-        <label htmlFor="telefono">Telefono: </label>
+        <div className="itemForm">
+        <label htmlFor="telefono"><b>Telefono :</b>  </label>
           <input            
             name="telefono"
             id="telefono"
             value={form.telefono}
-            onChange={inputData}
+            onChange={inputData}            
+            className="input3"
+            required
           />
         </div>
-        <button>Enviar</button>
+        <button className="btn btn-dark compra">COMPRAR</button>
       </form>
     </div>
   );
